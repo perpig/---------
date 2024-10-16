@@ -1,0 +1,256 @@
+_FATCH_     T0 00 CBFFFF                指令寄存器IR      PC输出   A输出                 写入  +1
+               01 FFFFFF                                           A输出                 +1
+               02 FFFFFF                                           A输出                 +1
+               03 FFFFFF                                           A输出                 +1
+UNDEF       T0 04 CBFFFF                指令寄存器IR      PC输出   A输出                 写入  +1
+               05 FFFFFF                                           A输出                 +1
+               06 FFFFFF                                           A输出                 +1
+               07 FFFFFF                                           A输出                 +1
+UNDEF       T0 08 CBFFFF                指令寄存器IR      PC输出   A输出                 写入  +1 
+               09 FFFFFF                                           A输出                 +1
+               0A FFFFFF                                           A输出                 +1
+               0B FFFFFF                                           A输出                 +1 
+UNDEF       T0 0C CBFFFF                指令寄存器IR      PC输出   A输出                 写入  +1
+               0D FFFFFF                                           A输出                 +1
+               0E FFFFFF                                           A输出                 +1
+               0F FFFFFF                                           A输出                 +1
+ADD A, R?   T2 10 FFF7EF 寄存器值R?    寄存器W                     A输出                 +1
+            T1 11 CBFE90 ALU直通       寄存器A标志位C,Z   PC输出   加运算                写入  +1
+               12 FFFFFF 浮空                                      A输出                 +1
+               13 FFFFFF 浮空                                      A输出                 +1
+ADD A, @R   T3 14 FF77FF 寄存器值R?    地址寄存器MAR               A输出                 +1
+            T2 15 D7BFEF 存贮器值EM    寄存器W            MAR输出  A输出                 +1
+            T1 16 CBFE90 ALU直通       寄存器A,IR,C,Z     PC输出   加运算                写入  +1
+               17 FFFFFF 浮空                             浮空     A输出                 +1
+ADD A, *    T2 18 C77FFF 存贮器值EM    地址寄存器MAR      PC输出   A输出                 +1    +1
+            T1 19 D7BFEF 存贮器值EM    寄存器W            MAR输出  A输出                 +1
+            T0 1A CBFE90 ALU直通       寄存器A 标志位C,Z  PC输出   加运算                +1
+               1B FFFFFF 浮空                             浮空     A输出                 +1
+ADD A, #*   T2 1C C7FFEF 存贮器值EM    寄存器W            PC输出   A输出                 +1    +1
+            T1 1D CBFE90 ALU直通       寄存器A,IR,C,Z     PC输出   加运算                +1
+               1E FFFFFF 浮空                             浮空     A输出                 +1
+               1F FFFFFF 浮空                             浮空     A输出                 +1
+ADDC A, R?  T1 20 FFF7EF 寄存器值R?    寄存器W                     A输出                 +1
+            T0 21 CBFE94 ALU直通       寄存器A,IR,C,Z     PC输出   带进位加运算          写入  +1
+               22 CBFFFF 浮空                             浮空     A输出                 +1
+               23 FFFFFF 浮空                             浮空     A输出                 +1
+ADDC A, @R? T2 24 FF77FF 寄存器值R?    地址寄存器MAR               A输出                 +1
+            T1 25 D7BFEF 存贮器值EM    寄存器W            MAR输    A输出                 +1
+            T0 26 CBFE94 ALU直通       寄存器A,IR,C,Z     PC输出   带进位加运算          +1
+               27 FFFFFF 浮空                             浮空     A输出                 +1
+ADDC A, *   T2 28 C77FFF 存贮器值EM    地址寄存器MAR      PC输出   A输出                 +1    +1
+            T1 29 D7BFEF 存贮器值EM    寄存器W            MAR输出  A输出                 +1
+            T0 2A CBFE94 ALU直通       寄存器A,IR,C,Z     PC输出   带进位加运算          写入  +1
+               2B FFFFFF 浮空                             浮空     A输出                 +1
+ADDC A, #I  T1 2C C7FFEF 存贮器值EM    寄存器W            PC输出   A输出                 +1    +1
+            T0 2D CBFE94 ALU直通       寄存器A,IR,C,Z     PC输出   带进位加运算          写入  +1
+               2E FFFFFF 浮空                             浮空     A输出                 +1
+               2F FFFFFF 浮空                             浮空     A输出                 +1
+SUB A, R?   T2 30 FFF7EF 寄存器值R?    寄存器W                     A输出                 +1
+            T1 31 FFFE91 ALU直通       寄存器A 标志位C,Z           减运算                +1
+            T0 32 CBFFFF 浮空          指令寄存器IR       PC输出   A输出                 写入  +1
+               33 FFFFFF                                           A输出                 +1
+SUB A, @R?  T2 34 FF77FF 寄存器值R?    地址寄存器MAR               A输出                 +1
+            T1 35 D7BFEF 存贮器值EM    寄存器W            MAR输出  A输出                 +1
+            T0 36 CBFE91 ALU直通       寄存器A,IR,C,Z     PC输出   减运算                写入  +1
+               37 FFFFFF 浮空                             浮空     A输出                 +1
+SUB A, *    T2 38 C77FFF 存贮器值EM    地址寄存器MAR      PC输出   A输出                 +1    +1
+            T1 39 D7BFEF 存贮器值EM    寄存器W            MAR输出  A输出                 +1
+            T0 3A CBFE91 ALU直通       寄存器A,IR,C,Z     PC输出   减运算                写入  +1
+               3B FFFFFF 浮空                             浮空     A输出                 +1
+SUB A, #*   T1 3C C7FFEF 存贮器值EM    寄存器W            PC输出   A输出                 +1    +1
+            T0 3D CBFE91 ALU直通       寄存器A,IR,C,Z     PC输出   减运算                写入  +1
+               3E FFFFFF 浮空                             浮空     A输出                 +1
+               3F FFFFFF 浮空                             浮空     A输出                 +1
+SUBC A, R?  T1 40 FFF7EF 寄存器值R?    寄存器W                     A输出                 +1
+            T0 41 CBFE95 ALU直通       寄存器A,IR,C,Z     PC输出   带进位减运算          写入  +1
+               42 FFFFFF 浮空                             浮空     A输出                 +1
+               43 FFFFFF 浮空                             浮空     A输出                 +1
+SUBC A, @R? T2 44 FF77FF 寄存器值R?    地址寄存器MAR               A输出                 +1
+            T1 45 D7BFEF 存贮器值EM    寄存器W            MAR输出  A输出                 +1
+            T0 46 CBFE95 ALU直通       寄存器A,IR,C,Z     PC输出   带进位减运算          写入  +1
+               47 FFFFFF 浮空                             浮空     A输出                 +1
+SUBC A, *   T2 48 C77FFF 存贮器值EM    地址寄存器MAR      PC输出   A输出                 +1    +1
+            T1 49 D7BFEF 存贮器值EM    寄存器W            MAR输出  A输出                 +1
+            T0 4A CBFE95 ALU直通       寄存器A,IR,C,Z     PC输出   带进位减运算          写入  +1
+               4B FFFFFF 浮空                             浮空     A输出                 +1
+SUBC A, #*  T1 4C C7FFEF 存贮器值EM    寄存器W            PC输出   A输出                 +1    +1
+            T0 4D FFFE95 ALU直通       寄存器A,IR,C,Z     PC输出   带进位减运算          写入  +1
+               4E FFFFFF 浮空                             浮空     A输出                 +1
+               4F FFFFFF 浮空                             浮空     A输出                 +1
+AND A, R?   T1 50 FFF7EF 寄存器值R?    寄存器W                     A输出                 +1
+            T0 51 CBFE93 ALU直通       寄存器A,IR,C,Z     PC输出   与运算                写入  +1
+               52 FFFFFF 浮空                             浮空     A输出                 +1
+               53 FFFFFF 浮空                             浮空     A输出                 +1
+AND A, @R?  T2 54 FF77FF 寄存器值R?    地址寄存器MAR               A输出                 +1
+            T1 55 D7BFEF 存贮器值EM    寄存器W            MAR输出  A输出                 +1
+            T0 56 CBFE93 ALU直通       寄存器A,IR,C,Z     PC输出   与运算                写入  +1
+               57 FFFFFF 浮空                             浮空     A输出                 +1
+AND A, *    T2 58 C77FFF 存贮器值EM    地址寄存器MAR      PC输出   A输出                 +1    +1
+            T1 59 D7BFEF 存贮器值EM    寄存器W            MAR输出  A输出                 +1
+            T0 5A CBFE93 ALU直通       寄存器A,IR,C,Z     PC输出   与运算                写入  +1
+               5B FFFFFF 浮空                             浮空     A输出                 +1
+AND A, #*   T1 5C C7FFEF 存贮器值EM    寄存器W            PC输出   A输出                 +1    +1
+            T0 5D CBFE93 ALU直通       寄存器A,IR,C,Z     PC输出   与运算                写入  +1
+               5E FFFFFF 浮空                             浮空     A输出                 +1
+               5F FFFFFF 浮空                             浮空     A输出                 +1
+OR A, R?    T1 60 FFF7EF 寄存器值R?    寄存器W                     A输出                 +1
+            T0 61 CBFE92 ALU直通       寄存器A,IR,C,Z     PC输出   或运算                写入  +1
+               62 FFFFFF 浮空                             浮空     A输出                 +1
+               63 FFFFFF 浮空                             浮空     A输出                 +1
+OR A, @R?   T2 64 FF77FF 寄存器值R?    地址寄存器MAR               A输出                 +1
+            T1 65 D7BFEF 存贮器值EM    寄存器W            MAR输出  A输出                 +1
+            T0 66 CBFE92 ALU直通       寄存器A,IR,C,Z     PC输出   或运算                写入  +1
+               67 FFFFFF 浮空                             浮空     A输出                 +1
+OR A, *     T2 68 C77FFF 存贮器值EM    地址寄存器MAR      PC输出   A输出                 +1    +1
+            T1 69 D7BFEF 存贮器值EM    寄存器W            MAR输出  A输出                 +1
+            T0 6A CBFE92 ALU直通       寄存器A,IR,C,Z     PC输出   或运算                写入  +1
+               6B FFFFFF 浮空                             浮空     A输出                 +1
+OR A, #*    T2 6C C7FFEF 存贮器值EM    寄存器W            PC输出   A输出                 +1    +1
+            T1 6D CBFE92 ALU直通       寄存器A,IR,C,Z     PC输出   或运算                写入  +1
+            T0 6E FFFFFF 浮空                             浮空     A输出                 +1
+               6F FFFFFF 浮空                             浮空     A输出                 +1
+MOV A, R?   T0 70 CBF7F7 寄存器值R?    寄存器A,IR         PC输出   A输出                 写入  +1
+               71 FFFFFF 浮空                             浮空     A输出                 +1
+               72 FFFFFF                                           A输出                 +1
+               73 FFFFFF                                           A输出                 +1
+MOV A, @R?  T2 74 FF77FF 寄存器值R?    地址寄存器MAR               A输出                 +1
+            T1 75 D7BFF7 存贮器值EM    寄存器A            MAR输出  A输出                 +1
+            T0 76 CBFFFF               指令寄存器IR       PC输出   A输出                 写入  +1
+               77 FFFFFF                                           A输出                 +1
+MOV A, *    T2 78 C77FFF 存贮器值EM    地址寄存器MAR      PC输出   A输出                 +1    +1
+            T1 79 D7BFF7 存贮器值EM    寄存器A            MAR输出  A输出                 +1
+            T0 7A CBFFFF               指令寄存器IR       PC输出   A输出                 写入  +1
+               7B FFFFFF                                           A输出                 +1
+MOV A, #*   T1 7C C7FFF7 存贮器值EM    寄存器A            PC输出   A输出                 +1    +1
+            T0 7D CBFFFF               指令寄存器IR       PC输出   A输出                 写入  +1
+               7E FFFFFF                                           A输出                 +1
+               7F FFFFFF                                           A输出                 +1
+MOV R?, A   T0 80 CBFB9F ALU直通       寄存器R?,IR        PC输出   A输出                 写入  +1
+               81 FFFFFF                                           A输出                 +1
+               82 FFFFFF                                           A输出                 +1
+               83 FFFFFF                                           A输出                 +1
+MOV @R?, A  T2 84 FF77FF 寄存器值R?    地址寄存器MAR               A输出                 +1
+            T1 85 B7BF9F ALU直通       存贮器EM           MAR输出  A输出                 +1
+            T0 86 CBFFFF               指令寄存器IR       PC输出   A输出                 写入  +1
+               87 FFFFFF                                           A输出                 +1
+MOV *, A    T2 88 C77FFF 存贮器值EM    地址寄存器MAR      PC输出   A输出                 +1    +1
+            T1 89 B7BF9F ALU直通       存贮器EM           MAR输出  A输出                 +1
+            T0 8A CBFFFF               指令寄存器IR       PC输出   A输出                 写入  +1
+               8B FFFFFF                                           A输出                 +1
+MOV R?, #*  T1 8C C7FBFF 存贮器值EM    寄存器R?           PC输出   A输出                 +1    +1
+            T0 8D CBFFFF               指令寄存器IR       PC输出   A输出                 写入  +1
+               8E FFFFFF                                           A输出                 +1
+               8F FFFFFF                                           A输出                 +1
+READ A, *   T2 90 C77FFF 存贮器值EM    地址寄存器MAR      PC输出   A输出                 +1    +1
+            T1 91 7FBFF7               寄存器A            MAR输出  A输出                 +1
+            T0 92 CBFFFF               指令寄存器IR       PC输出   A输出                 写入  +1
+               93 FFFFFF                                           A输出                 +1
+WRITE *, A  T2 94 C77FFF 存贮器值EM    地址寄存器MAR      PC输出   A输出                 +1    +1
+            T1 95 FF9F9F ALU直通       用户OUT            MAR输出  A输出                 +1
+            T0 96 CBFFFF               指令寄存器IR       PC输出   A输出                 写入  +1
+               97 FFFFFF                                           A输出                 +1
+UNDEF       T0 98 CBFFFF               指令寄存器IR       PC输出   A输出                 写入  +1
+               99 FFFFFF                                           A输出                 +1
+               9A FFFFFF                                           A输出                 +1
+               9B FFFFFF                                           A输出                 +1
+UNDEF       T0 9C CBFFFF               指令寄存器IR       PC输出   A输出                 写入  +1
+               9D FFFFFF                                           A输出                 +1
+               9E FFFFFF                                           A输出                 +1
+               9F FFFFFF                                           A输出                 +1
+JC *        T1 A0 C6FFFF 存贮器值EM    寄存器PC           PC输出   A输出                 +1  写入
+            T0 A1 CBFFFF               指令寄存器IR       PC输出   A输出                 写入  +1
+               A2 FFFFFF                                           A输出                 +1
+               A3 FFFFFF                                           A输出                 +1
+JZ *        T1 A4 C6FFFF 存贮器值EM    寄存器PC           PC输出   A输出                 +1  写入
+            T0 A5 CBFFFF               指令寄存器IR       PC输出   A输出                 写入  +1
+               A6 FFFFFF                                           A输出                 +1
+               A7 FFFFFF                                           A输出                 +1
+UNDEF       T0 A8 CBFFFF               指令寄存器IR       PC输出   A输出                 写入  +1
+               A9 FFFFFF                                           A输出                 +1
+               AA FFFFFF                                           A输出                 +1
+               AB FFFFFF                                           A输出                 +1
+JMP *       T1 AC C6FFFF 存贮器值EM    寄存器PC           PC输出   A输出                 +1  写入
+            T0 AD CBFFFF               指令寄存器IR       PC输出   A输出                 写入  +1
+               AE FFFFFF                                           A输出                 +1
+               AF FFFFFF                                           A输出                 +1
+UNDEF       T0 B0 CBFFFF               指令寄存器IR       PC输出   A输出                 写入  +1
+               B1 FFFFFF                                           A输出                 +1
+               B2 FFFFFF                                           A输出                 +1
+               B3 FFFFFF                                           A输出                 +1
+UNDEF       T0 B4 CBFFFF               指令寄存器IR       PC输出   A输出                 写入  +1
+               B5 FFFFFF                                           A输出                 +1
+               B6 FFFFFF                                           A输出                 +1
+               B7 FFFFFF                                           A输出                 +1
+_INT_       T2 B8 FFEF7F PC值          堆栈寄存器ST                A输出                 +1
+            T1 B9 FEFF3F 中断地址IA    寄存器PC                    A输出                 +1  写入
+            T0 BA CBFFFF               指令寄存器IR       PC输出   A输出                 写入  +1
+               BB FFFFFF                                           A输出                 +1
+CALL *      T3 BC EF7F7F PC值          地址寄存器MAR      PC输出   A输出                 +1    +1
+            T2 BD FFEF7F PC值          堆栈寄存器ST                A输出                 +1
+            T1 BE D6BFFF 存贮器值EM    寄存器PC           MAR输出  A输出                 +1  写入
+            T0 BF CBFFFF               指令寄存器IR       PC输出   A输出                 写入  +1
+IN          T0 C0 CBFF17 用户IN        寄存器A,IR         PC输出   A输出                 写入  +1
+               C1 FFFFFF                                           A输出                 +1
+               C2 FFFFFF                                           A输出                 +1
+               C3 FFFFFF                                           A输出                 +1
+OUT         T0 C4 CBDF9F ALU直通       用户OUT,IR         PC输出   A输出                 写入  +1
+               C5 FFFFFF                                           A输出                 +1
+               C6 FFFFFF                                           A输出                 +1
+               C7 FFFFFF                                           A输出                 +1
+UNDEF       T0 C8 CBFFFF               指令寄存器IR       PC输出   A输出                 写入  +1
+               C9 FFFFFF                                           A输出                 +1
+               CA FFFFFF                                           A输出                 +1
+               CB FFFFFF                                           A输出                 +1
+RET         T1 CC FEFF5F 堆栈寄存器ST  寄存器PC                    A输出                 +1  写入
+            T0 CD CBFFFF               指令寄存器IR       PC输出   A输出                 写入  +1
+               CE FFFFFF                                           A输出                 +1
+               CF FFFFFF                                           A输出                 +1
+RR A        T0 D0 CBFCB7 ALU右移       寄存器A,IR,C,Z     PC输出   A输出             右移写入  +1
+               D1 FFFFFF                                           A输出                 +1
+               D2 FFFFFF                                           A输出                 +1
+               D3 FFFFFF                                           A输出                 +1
+RL A        T0 D4 CBFCD7 ALU左移       寄存器A,IR,C,Z     PC输出   A输出             左移写入  +1
+               D5 FFFFFF                                           A输出                 +1
+               D6 FFFFFF                                           A输出                 +1
+               D7 FFFFFF                                           A输出                 +1
+RRC A       T0 D8 CBFEB7 ALU右移       寄存器A,IR,C,Z     PC输出   A输出       带进位右移写入  +1
+               D9 FFFFFF                                           A输出                 +1
+               DA FFFFFF                                           A输出                 +1
+               DB FFFFFF                                           A输出                 +1
+RLC A       T0 DC CBFED7 ALU左移       寄存器A,IR,C,Z     PC输出   A输出       带进位左移写入  +1
+               DD FFFFFF                                           A输出                 +1
+               DE FFFFFF                                           A输出                 +1
+               DF FFFFFF                                           A输出                 +1
+NOP         T0 E0 CBFFFF               指令寄存器IR       PC输出   A输出                 写入  +1
+               E1 FFFFFF                                           A输出                 +1
+               E2 FFFFFF                                           A输出                 +1
+               E3 FFFFFF                                           A输出                 +1
+CPL A       T0 E4 CBFE96 ALU直通       寄存器A,IR,C,Z     PC输出   A取反                 写入  +1
+               E5 FFFFFF                                           A输出                 +1
+               E6 FFFFFF                                           A输出                 +1
+               E7 FFFFFF                                           A输出                 +1
+UNDEF       T0 E8 CBFFFF               指令寄存器IR       PC输出   A输出                 写入  +1
+               E9 FFFFFF                                           A输出                 +1
+               EA FFFFFF                                           A输出                 +1
+               EB FFFFFF                                           A输出                 +1
+RETI        T1 EC FCFF5F 堆栈寄存器ST  寄存器PC                    A输出                 +1  写入
+            T0 ED CBFFFF               指令寄存器IR       PC输出   A输出                 写入  +1
+               EE FFFFFF                                           A输出                 +1
+               EF FFFFFF                                           A输出                 +1
+UNDEF       T0 F0 CBFFFF               指令寄存器IR       PC输出   A输出                 写入  +1
+               F1 FFFFFF                                           A输出                 +1
+               F2 FFFFFF                                           A输出                 +1
+               F3 FFFFFF                                           A输出                 +1
+UNDEF       T0 F4 CBFFFF               指令寄存器IR       PC输出   A输出                 写入  +1
+               F5 FFFFFF                                           A输出                 +1
+               F6 FFFFFF                                           A输出                 +1
+               F7 FFFFFF                                           A输出                 +1
+UNDEF       T0 F8 CBFFFF               指令寄存器IR       PC输出   A输出                 写入  +1
+               F9 FFFFFF                                           A输出                 +1
+               FA FFFFFF                                           A输出                 +1
+               FB FFFFFF                                           A输出                 +1
+UNDEF       T0 FC CBFFFF               指令寄存器IR       PC输出   A输出                 写入  +1
+               FD FFFFFF                                           A输出                 +1
+               FE FFFFFF                                           A输出                 +1
+               FF FFFFFF                                           A输出                 +1

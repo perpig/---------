@@ -1,0 +1,23 @@
+_FATCH_       000000XX 00-03     1
+ADDW A        000001xx 04-07     1
+ADDCW A       000010XX 08-0B     1
+SUBW A        000011XX 0C-0F     1
+SUBCW A       000100XX 10-13     1
+ANDW A        000101XX 14-17     1
+ORW A         000110XX 18-1B     1
+LDW A         000111XX 1C-1F     1
+LDW R?        001000XX 20-23     1
+LDA R?        001001XX 24-27     1
+STA R?        001010XX 28-2B     1
+RR A          001011XX 2C-2F     1
+RL A          001100XX 30-33     1
+RRC A         001101XX 34-37     1
+RLC A         001110XX 38-3B     1
+CPL A         001111xx 3C-3F     1
+LD A,#*       010000XX 40-43 *   2 
+LD A,*        010001XX 44-47 *   2
+ST A,*        010010XX 48-4B *   2
+JMP *         010011XX 4C-4F *   2
+JC *          010100XX 50-53 *   2
+JZ *          010101XX 54-57 *   2
+_INT_         101110XX B8-BB     1

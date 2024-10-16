@@ -1,0 +1,5 @@
+OUT A               10      1
+_FATCH_             00      1
+LD A,#*             04      2
+ADD A,#*            08      2
+GOTO *              0C      2

@@ -1,0 +1,256 @@
+_FATCH_     T0 00 CBFFFF               Ö¸Áî¼Ä´æÆ÷IR       PCÊä³ö   AÊä³ö                 Ð´Èë  +1
+               01 FFFFFF                                           AÊä³ö                 +1
+               02 FFFFFF                                           AÊä³ö                 +1
+               03 FFFFFF                                           AÊä³ö                 +1
+ADDW A      T0 04 CBFE90 ALUÖ±Í¨       ¼Ä´æÆ÷A,IR±êÖ¾Î»C,ZPCÊä³ö   ¼ÓÔËËã                Ð´Èë  +1
+               05 FFFFFF                                           AÊä³ö                 +1
+               06 FFFFFF                                           AÊä³ö                 +1
+               07 FFFFFF                                           AÊä³ö                 +1
+ADDCW A     T0 08 CBFE94 ALUÖ±Í¨       ¼Ä´æÆ÷A,IR±êÖ¾Î»C,ZPCÊä³ö   ´ø½øÎ»¼ÓÔËËã          Ð´Èë  +1 
+               09 FFFFFF                                           AÊä³ö                 +1
+               0A FFFFFF                                           AÊä³ö                 +1
+               0B FFFFFF                                           AÊä³ö                 +1 
+SUBW A      T0 0C CBFE91 ALUÖ±Í¨       ¼Ä´æÆ÷A,IR±êÖ¾Î»C,ZPCÊä³ö   ¼õÔËËã                Ð´Èë  +1
+               0D FFFFFF                                           AÊä³ö                 +1
+               0E FFFFFF                                           AÊä³ö                 +1
+               0F FFFFFF                                           AÊä³ö                 +1
+SUBCW A     T0 10 CBFE95 ALUÖ±Í¨       ¼Ä´æÆ÷A,IR±êÖ¾Î»C,ZPCÊä³ö   ´ø½øÎ»¼õÔËËã          Ð´Èë  +1
+               11 FFFFFF                                           AÊä³ö                 +1   
+               12 FFFFFF                                           AÊä³ö                 +1
+               13 FFFFFF                                           AÊä³ö                 +1
+ANDW A      T0 14 CBFE93 ALUÖ±Í¨       ¼Ä´æÆ÷A,IR±êÖ¾Î»C,ZPCÊä³ö   ÓëÔËËã                Ð´Èë  +1
+               15 FFFFFF                                           AÊä³ö                 +1   
+               16 FFFFFF                                           AÊä³ö                 +1   
+               17 FFFFFF                                           AÊä³ö                 +1   
+ORW A       T0 18 CBFE92 ALUÖ±Í¨       ¼Ä´æÆ÷A,IR±êÖ¾Î»C,ZPCÊä³ö   »òÔËËã                Ð´Èë  +1
+               19 FFFFFF                                           AÊä³ö                 +1 
+               1A FFFFFF                                           AÊä³ö                 +1 
+               1B FFFFFF                                           AÊä³ö                 +1 
+LDW A       T0 1C CBFF8F ALUÖ±Í¨       ¼Ä´æÆ÷A,IR         PCÊä³ö   AÊä³ö                 Ð´Èë  +1
+               1D FFFFFF                                           AÊä³ö                 +1
+               1E FFFFFF                                           AÊä³ö                 +1
+               1F FFFFFF                                           AÊä³ö                 +1
+LDW R?      T0 20 CBF7EF ¼Ä´æÆ÷ÖµR?    ¼Ä´æÆ÷W,IR         PCÊä³ö   AÊä³ö                 Ð´Èë  +1
+               21 FFFFFF                                           AÊä³ö                 +1
+               22 FFFFFF                                           AÊä³ö                 +1
+               23 FFFFFF                                           AÊä³ö                 +1
+LDA R?      T0 24 CBF7F7 ¼Ä´æÆ÷ÖµR?    ¼Ä´æÆ÷A,IR         PCÊä³ö   AÊä³ö                 Ð´Èë  +1
+               25 FFFFFF                                           AÊä³ö                 +1
+               26 FFFFFF                                           AÊä³ö                 +1
+               27 FFFFFF                                           AÊä³ö                 +1
+STA R?      T0 28 CBFB9F ALUÖ±Í¨       ¼Ä´æÆ÷R,IR         PCÊä³ö   AÊä³ö                 Ð´Èë  +1
+               29 FFFFFF                                           AÊä³ö                 +1
+               2A FFFFFF                                           AÊä³ö                 +1
+               2B FFFFFF                                           AÊä³ö                 +1
+RR A        T0 2C CBFCB7 ALUÓÒÒÆ       ¼Ä´æÆ÷A,IR±êÖ¾Î»C,ZPCÊä³ö   AÊä³ö           ÓÒÒÆ Ð´Èë   +1
+               2D FFFFFF                                           AÊä³ö                 +1
+               2E FFFFFF                                           AÊä³ö                 +1
+               2F FFFFFF                                           AÊä³ö                 +1
+RL A        T0 30 CBFCD7 ALU×óÒÆ       ¼Ä´æÆ÷A,IR±êÖ¾Î»C,ZPCÊä³ö   AÊä³ö           ×óÒÆ  Ð´Èë  +1
+               31 FFFFFF                                           AÊä³ö                 +1
+               32 FFFFFF                                           AÊä³ö                 +1
+               33 FFFFFF                                           AÊä³ö                 +1
+RRC A       T0 34 CBFEB7 ALUÓÒÒÆ       ¼Ä´æÆ÷A,IR±êÖ¾Î»C,ZPCÊä³ö   AÊä³ö       ´ø½øÎ»ÓÒÒÆÐ´Èë  +1
+               35 FFFFFF                                           AÊä³ö                 +1
+               36 FFFFFF                                           AÊä³ö                 +1
+               37 FFFFFF                                           AÊä³ö                 +1
+RLC A       T0 38 CBFED7 ALU×óÒÆ       ¼Ä´æÆ÷A,IR±êÖ¾Î»C,ZPCÊä³ö   AÊä³ö       ´ø½øÎ»×óÒÆÐ´Èë  +1
+               39 FFFFFF                                           AÊä³ö                 +1
+               3A FFFFFF                                           AÊä³ö                 +1
+               3B FFFFFF                                           AÊä³ö                 +1
+CPL A       T0 3C CBFE96 ALUÖ±Í¨       ¼Ä´æÆ÷A,IR±êÖ¾Î»C,ZPCÊä³ö   AÈ¡·´                 Ð´Èë  +1
+               3D FFFFFF                                           AÊä³ö                 +1
+               3E FFFFFF                                           AÊä³ö                 +1
+               3F FFFFFF                                           AÊä³ö                 +1
+LD A,#*     T1 40 C7FFF7 ´æ´¢Æ÷ÖµEM    ¼Ä´æÆ÷A            PCÊä³ö   AÊä³ö                 +1    +1
+            T0 41 CBFFFF               Ö¸Áî¼Ä´æÆ÷IR       PCÊä³ö   AÊä³ö                 Ð´Èë  +1
+               42 FFFFFF                                           AÊä³ö                 +1
+               43 FFFFFF                                           AÊä³ö                 +1
+LD A,*      T2 44 C77FFF ´æ´¢Æ÷ÖµEM    µØÖ·¼Ä´æÆ÷MAR      PCÊä³ö   AÊä³ö                 +1    +1
+            T1 45 D7BFF7 ´æ´¢Æ÷ÖµEM    ¼Ä´æÆ÷A            MARÊä³ö  AÊä³ö                 +1
+            T0 46 CBFFFF               Ö¸Áî¼Ä´æÆ÷IR       PCÊä³ö   AÊä³ö                 Ð´Èë  +1
+               47 FFFFFF                                           AÊä³ö                 +1
+ST A,*      T2 48 C77FFF ´æ´¢Æ÷ÖµEM    µØÖ·¼Ä´æÆ÷MAR      PCÊä³ö   AÊä³ö                 +1    +1
+            T1 49 B7BF9F ALUÖ±Í¨       ´æ´¢Æ÷EM           MARÊä³ö  AÊä³ö                 +1
+            T0 4A CBFFFF               Ö¸Áî¼Ä´æÆ÷IR       PCÊä³ö   AÊä³ö                 Ð´Èë  +1 
+               4B FFFFFF                                           AÊä³ö                 +1
+JMP *       T1 4C C6FFFF ´æ´¢Æ÷ÖµEM    ¼Ä´æÆ÷PC           PCÊä³ö   AÊä³ö                 +1  Ð´Èë
+            T0 4D CBFFFF               Ö¸Áî¼Ä´æÆ÷IR       PCÊä³ö   AÊä³ö                 Ð´Èë  +1 
+               4E FFFFFF                                           AÊä³ö                 +1
+               4F FFFFFF                                           AÊä³ö                 +1
+JC *        T1 50 C6FFFF ´æ´¢Æ÷ÖµEM    ¼Ä´æÆ÷PC           PCÊä³ö   AÊä³ö                 Ð´Èë  +1
+            T0 51 CBFFFF               Ö¸Áî¼Ä´æÆ÷IR       PCÊä³ö   AÊä³ö                 Ð´Èë  +1 
+               52 FFFFFF                                           AÊä³ö                 +1
+               53 FFFFFF                                           AÊä³ö                 +1
+JZ *        T1 54 C6FFFF ´æ´¢Æ÷ÖµEM    ¼Ä´æÆ÷PC           PCÊä³ö   AÊä³ö                 Ð´Èë  +1
+            T0 55 CBFFFF               Ö¸Áî¼Ä´æÆ÷IR       PCÊä³ö   AÊä³ö                 Ð´Èë  +1 
+               56 FFFFFF                                           AÊä³ö                 +1
+               57 FFFFFF                                           AÊä³ö                 +1
+UNDEF          58 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               59 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               5A FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               5B FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+UNDEF          5C FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               5D FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               5E FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               5F FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+UNDEF          60 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               61 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               62 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               63 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+UNDEF          64 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               65 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               66 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               67 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+UNDEF          68 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               69 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               6A FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               6B FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+UNDEF          6C FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               6D FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               6E FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               6F FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+UNDEF          70 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               71 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               72 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               73 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+UNDEF          74 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               75 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               76 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               77 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+UNDEF          78 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               79 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               7A FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               7B FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+UNDEF          7C FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               7D FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               7E FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               7F FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+UNDEF          80 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               81 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               82 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               83 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+UNDEF          84 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               85 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               86 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               87 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+UNDEF          88 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               89 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               8A FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               8B FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+UNDEF          8C FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               8D FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               8E FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               8F FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+UNDEF          90 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               91 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               92 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               93 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+UNDEF          94 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               95 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               96 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               97 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+UNDEF          98 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               99 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               9A FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               9B FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+UNDEF          9C FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               9D FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               9E FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               9F FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+UNDEF          A0 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               A1 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               A2 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               A3 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+UNDEF          A4 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               A5 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               A6 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               A7 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+UNDEF          A8 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               A9 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               AA FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               AB FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+UNDEF          AC FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               AD FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               AE FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               AF FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+UNDEF          B0 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               B1 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               B2 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               B3 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+UNDEF          B4 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               B5 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               B6 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               B7 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1       
+_INT_          B8 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               B9 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               BA FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               BB FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+UNDEF          BC FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               BD FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               BE FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               BF FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+UNDEF          C0 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               C1 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               C2 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               C3 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+UNDEF          C4 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               C5 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               C6 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               C7 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+UNDEF          C8 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               C9 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               CA FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               CB FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+UNDEF          CC FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               CD FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               CE FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               CF FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+UNDEF          D0 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               D1 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               D2 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               D3 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+UNDEF          D4 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               D5 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               D6 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               D7 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+UNDEF          D8 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               D9 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               DA FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               DB FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+UNDEF          DC FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               DD FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               DE FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               DF FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+UNDEF          E0 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               E1 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               E2 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               E3 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+UNDEF          E4 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               E5 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               E6 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               E7 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+UNDEF          E8 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               E9 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               EA FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               EB FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+UNDEF          EC FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               ED FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               EE FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               EF FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+UNDEF          F0 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               F1 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               F2 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               F3 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+UNDEF          F4 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               F5 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               F6 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               F7 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+UNDEF          F8 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               F9 FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               FA FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               FB FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+UNDEF          FC FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               FD FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               FE FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1
+               FF FFFFFF ¸¡¿Õ                             ¸¡¿Õ     AÊä³ö                 +1

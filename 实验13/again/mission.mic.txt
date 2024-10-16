@@ -1,0 +1,28 @@
+_FATCH_     T3 00 FFFFFF
+            T2 01 FFFFFF
+            T1 02 FFFFFF
+            T0 03 CBFFFF
+输入A A,#*  T3 04 C7FFF7
+            T2 05 FFFFFF
+            T1 06 FFFFFF
+            T0 07 CBFFFF
+减法 A,#*   T3 08 C7FFEF
+            T2 09 FFFE91
+            T1 0A FFFFFF
+            T0 0B CBFFFF
+跳到 *      T3 0C C6FFFF
+            T2 0D FFFFFF
+            T1 0E FFFFFF
+            T0 0F CBFFFF
+输出        T3 10 FFDF9F
+            T2 11 FFFFFF
+            T1 12 FFFFFF
+            T0 13 CBFFFF
+零跳转 *    T3 14 C6FFFF
+            T2 15 FFFFFF
+            T1 16 FFFFFF
+            T0 17 CBFFFF
+猪猪A A,#*  T3 18 C7FFEF
+            T2 19 FFFE91
+            T1 1A FFFCB7
+            T0 1B CBDF9F
